@@ -6,26 +6,29 @@
 /*   By: hmartine <hmartine@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/22 18:28:30 by hmartine          #+#    #+#             */
-/*   Updated: 2022/01/22 20:00:56 by hmartine         ###   ########.fr       */
+/*   Updated: 2022/02/06 19:26:35 by hmartine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
 #include<string.h>
 #include<stdio.h>
 #include<unistd.h>
 
 void*	ft_memmove(void* dst, const void* src, size_t len);
+*/
 
-void*	ft_memmove(void* dst, const void* src, size_t len)
+#include "libft.h"
+
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	unsigned char*			p1;
-	const unsigned char*	p2;
+	unsigned char			*p1;
+	const unsigned char		*p2;
 	size_t					num;
 
 	num = 0;
-	p1 = ((unsigned char*) dst);
-	p2 = ((unsigned char*) src);
-	
+	p1 = ((unsigned char *)dst);
+	p2 = ((unsigned char *)src);
 	if (p1 > p2)
 	{
 		while (++num <= len)
@@ -39,6 +42,7 @@ void*	ft_memmove(void* dst, const void* src, size_t len)
 	return (dst);
 }
 
+/*
 int	main(void)
 {
 	char	a[20] = "Hola que tal?";
@@ -53,3 +57,4 @@ int	main(void)
 
 	return (0);
 }
+*/

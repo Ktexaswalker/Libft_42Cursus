@@ -27,9 +27,9 @@ NAME = libft.a
 
 FLAGS = -Wall -Werror -Wextra
 
-all : $(NAME)
-
 .c.o: ${CC} ${FLAGS} -I libft.h -c ${<:.c =.o}
+
+all : $(NAME)
 
 $(NAME) : $(OBJ)
 	@ar rcs $(NAME) $(OBJ)

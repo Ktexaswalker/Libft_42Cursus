@@ -6,23 +6,29 @@
 /*   By: hmartine <hmartine@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/15 16:49:14 by hmartine          #+#    #+#             */
-/*   Updated: 2022/01/15 17:43:36 by hmartine         ###   ########.fr       */
+/*   Updated: 2022/02/06 19:18:21 by hmartine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
 #include <ctype.h>
 #include <stdio.h>
 
 int	ft_isdigit(int c);
+*/
 
-int ft_isdigit(int c)
+#include "libft.h"
+
+int	ft_isdigit(int c)
 {
-	if ((c >= 48) && (c <=  57))
+	if ((c >= 48) && (c <= 57))
 	{
 		return (1);
 	}
 	return (0);
 }
+
+/*
 
 int main(void)
 {
@@ -52,3 +58,5 @@ int main(void)
 	, ft_isdigit('9')\
 	, ft_isdigit('-'));
 }
+
+*/

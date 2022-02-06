@@ -6,28 +6,32 @@
 /*   By: hmartine <hmartine@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/06 16:54:35 by hmartine          #+#    #+#             */
-/*   Updated: 2022/02/06 17:28:44 by hmartine         ###   ########.fr       */
+/*   Updated: 2022/02/06 19:31:17 by hmartine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
 #include<string.h>
 #include<stdlib.h>
 #include<stdio.h>
 #include<unistd.h>
 
 char*	ft_strdup(const char* s1);
+*/
 
-char*	ft_strdup(const char* s1)
+#include "libft.h"
+
+char	*ft_strdup(const char *s1)
 {
 	int		c;
-	char*	str;
+	char	*str;
 	int		i;
 
 	i = 0;
 	while (s1[i] != '\0')
 		i++;
 	c = 0;
-	str = (char*) malloc(sizeof(char) * i + 1);
+	str = (char *)malloc(sizeof(char) * i + 1);
 	if (!str)
 		return (NULL);
 	while (s1[c] != '\0')
@@ -36,9 +40,10 @@ char*	ft_strdup(const char* s1)
 		c++;
 	}
 	str[c] = '\0';
-	return ((char*) str);
+	return ((char *)str);
 }
 
+/*
 int	main(void)
 {
 	char	a[20] = "Hola";
@@ -47,3 +52,4 @@ int	main(void)
 	printf("Creada:   %s\n", ft_strdup(a));
 	return (0);
 }
+*/

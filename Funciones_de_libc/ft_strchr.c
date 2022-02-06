@@ -6,21 +6,25 @@
 /*   By: hmartine <hmartine@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/23 20:01:11 by hmartine          #+#    #+#             */
-/*   Updated: 2022/01/23 21:06:54 by hmartine         ###   ########.fr       */
+/*   Updated: 2022/02/06 19:29:59 by hmartine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
 #include<string.h>
 #include<stdio.h>
 #include<unistd.h>
 
 char*	ft_strchr(const char* s, int c);
+*/
 
-char*	ft_strchr(const char* s, int c)
+#include "libft.h"
+
+char	*ft_strchr(const char *s, int c)
 {
-	char*	p;
+	char	*p;
 
-	p = (char*) s;
+	p = (char *)s;
 	while (*p != c)
 	{
 		if (*p == '\0')
@@ -30,6 +34,7 @@ char*	ft_strchr(const char* s, int c)
 	return (p);
 }
 
+/*
 int	main(void)
 {
 	char	a[20] = "Hola que tal?";
@@ -41,3 +46,4 @@ int	main(void)
 	printf("Creada:  %s\n", ft_strchr(aa, 65));
 	return (0);
 }
+*/

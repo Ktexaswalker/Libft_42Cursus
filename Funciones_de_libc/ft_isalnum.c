@@ -6,14 +6,18 @@
 /*   By: hmartine <hmartine@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/15 17:53:02 by hmartine          #+#    #+#             */
-/*   Updated: 2022/01/15 19:11:08 by hmartine         ###   ########.fr       */
+/*   Updated: 2022/02/06 18:31:25 by hmartine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
 #include <stdio.h>
 #include <ctype.h>
 
 int	ft_isalnum(int c);
+*/
+
+#include "libft.h"
 
 int	ft_isalnum(int c)
 {
@@ -24,6 +28,7 @@ int	ft_isalnum(int c)
 	return (0);
 }
 
+/*
 int	main(void)
 {
 	printf("Funcion original: %d, %d, %d, %d, %d, %d, %d, %d, %d\n"\
@@ -49,3 +54,4 @@ int	main(void)
 	, ft_isalnum('{'));
 	return (0);
 }
+*/

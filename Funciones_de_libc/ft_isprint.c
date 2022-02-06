@@ -6,14 +6,18 @@
 /*   By: hmartine <hmartine@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/15 20:26:54 by hmartine          #+#    #+#             */
-/*   Updated: 2022/01/15 20:47:46 by hmartine         ###   ########.fr       */
+/*   Updated: 2022/02/06 18:33:25 by hmartine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
 #include<stdio.h>
 #include<ctype.h>
 
 int	ft_isprint(int c);
+*/
+
+#include "libft.h"
 
 int	ft_isprint(int c)
 {
@@ -24,6 +28,7 @@ int	ft_isprint(int c)
 	return (0);
 }
 
+/*
 int main(void)
 {
 	printf("Funcion original: %d, %d, %d, %d, %d\n"\
@@ -33,3 +38,4 @@ int main(void)
 	, ft_isprint('\0'), ft_isprint(' '), ft_isprint(127)\
 	, ft_isprint('A'), ft_isprint('0'));
 }
+*/

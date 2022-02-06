@@ -6,23 +6,27 @@
 /*   By: hmartine <hmartine@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/02 12:40:37 by hmartine          #+#    #+#             */
-/*   Updated: 2022/02/02 13:32:06 by hmartine         ###   ########.fr       */
+/*   Updated: 2022/02/06 19:22:40 by hmartine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
 #include<string.h>
 #include<stdio.h>
 #include<unistd.h>
 
 int	ft_memcmp(const void* s1, const void* s2, size_t n);
+*/
 
-int	ft_memcmp(const void* s1, const void* s2, size_t n)
+#include "libft.h"
+
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	char*	p1;
-	char*	p2;
+	char	*p1;
+	char	*p2;
 
-	p1 = (char*) s1;
-	p2 = (char*) s2;
+	p1 = (char *)s1;
+	p2 = (char *)s2;
 	while (((n > 0)) && ((*p1 != '\0') || (*p2 != '\0')))
 	{
 		if ((*p1 > *p2) || (*p2 > *p1))
@@ -34,6 +38,7 @@ int	ft_memcmp(const void* s1, const void* s2, size_t n)
 	return (0);
 }
 
+/*
 int	main(void)
 {
 	char	a[20] = "Hola que tal?";
@@ -51,3 +56,4 @@ int	main(void)
 	printf("Creada;   %d\n", ft_memcmp(cc, dd, 20));
 	return (0);
 }
+*/

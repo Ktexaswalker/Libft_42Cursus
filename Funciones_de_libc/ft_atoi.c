@@ -6,17 +6,21 @@
 /*   By: hmartine <hmartine@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/05 17:43:13 by hmartine          #+#    #+#             */
-/*   Updated: 2022/02/05 20:06:56 by hmartine         ###   ########.fr       */
+/*   Updated: 2022/02/06 19:09:09 by hmartine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
 #include<stdlib.h>
 #include<stdio.h>
 #include<unistd.h>
 
 int	ft_atoi(const char* str);
+*/
 
-int	ft_atoi(const char* str)
+#include "libft.h"
+
+int	ft_atoi(const char *str)
 {
 	int						c;
 	unsigned long long int	res;
@@ -42,9 +46,10 @@ int	ft_atoi(const char* str)
 		return (0);
 	else if (res >= 9223372036854775807)
 		return (-1);
-	return ((int) (res * sign));
+	return ((int)(res * sign));
 }
 
+/*
 int	main(void)
 {
 
@@ -63,3 +68,4 @@ int	main(void)
 	printf("+->%d\n", ft_atoi(d));
 	return (0);
 }
+*/

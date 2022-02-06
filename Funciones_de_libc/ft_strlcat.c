@@ -6,17 +6,21 @@
 /*   By: hmartine <hmartine@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/22 22:18:13 by hmartine          #+#    #+#             */
-/*   Updated: 2022/01/23 17:34:07 by hmartine         ###   ########.fr       */
+/*   Updated: 2022/02/06 19:33:09 by hmartine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
 #include<string.h>
 #include<stdio.h>
 #include<unistd.h>
 
 size_t	ft_strlcat(char* dst, const char* src, size_t dstsize);
+*/
 
-size_t	ft_strlcat(char* dst, const char* src, size_t dstsize)
+#include "libft.h"
+
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	lendst;
 	size_t	lensrc;
@@ -25,7 +29,6 @@ size_t	ft_strlcat(char* dst, const char* src, size_t dstsize)
 	lendst = 0;
 	lensrc = 0;
 	i = 0;
-
 	while (dst[lendst] != '\0')
 		lendst++;
 	while (src[lensrc] != '\0')
@@ -41,6 +44,7 @@ size_t	ft_strlcat(char* dst, const char* src, size_t dstsize)
 	return (lendst + lensrc);
 }
 
+/*
 int	main(void)
 {
 	char	a[20] = "Hola que tal?";
@@ -59,3 +63,4 @@ int	main(void)
 	printf("Creada:   (14c, 13c, 00)%lu\n", ft_strlcat(bb, aa, 0));
 	return (0);
 }
+*/

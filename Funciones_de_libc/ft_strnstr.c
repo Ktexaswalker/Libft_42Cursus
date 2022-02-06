@@ -6,17 +6,21 @@
 /*   By: hmartine <hmartine@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/02 14:00:49 by hmartine          #+#    #+#             */
-/*   Updated: 2022/02/05 17:23:46 by hmartine         ###   ########.fr       */
+/*   Updated: 2022/02/06 20:09:11 by hmartine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
 #include<string.h>
 #include<stdio.h>
 #include<unistd.h>
 
-char*	ft_strnstr(const char* haystack, const char* needle, size_t len);
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
+*/
 
-char*	ft_strnstr(const char* haystack, const char* needle, size_t len)
+#include "libft.h"
+
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	size_t	i;
 	size_t	j;
@@ -33,14 +37,15 @@ char*	ft_strnstr(const char* haystack, const char* needle, size_t len)
 			{
 				j++;
 				if (needle[j] == '\0')
-					return ((char*) haystack + i - j + 1);
+					return ((char *)haystack + i - j + 1);
 			}
 		}
 		i++;
 	}
-	return (NULL);	
+	return (NULL);
 }
 
+/*
 int	main(void)
 {
 	char	a[20] = "Hola qu que tal?";
@@ -56,3 +61,4 @@ int	main(void)
 	printf("Creada:   %s\n", ft_strnstr(aa, bb, 11));
 	return (0);
 }
+*/

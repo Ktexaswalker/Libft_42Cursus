@@ -6,21 +6,25 @@
 /*   By: hmartine <hmartine@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/02 10:56:04 by hmartine          #+#    #+#             */
-/*   Updated: 2022/02/02 12:26:11 by hmartine         ###   ########.fr       */
+/*   Updated: 2022/02/06 19:20:18 by hmartine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
 #include<string.h>
 #include<stdio.h>
 #include<unistd.h>
 
 void*	ft_memchr(const void* s, int c, size_t n);
+*/
 
-void*	ft_memchr(const void* s, int c, size_t n)
+#include "libft.h"
+
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	char*	p;
+	char	*p;
 
-	p = (char*) s;
+	p = (char *)s;
 	while (n > 0)
 	{
 		if (*p != '\0')
@@ -34,6 +38,7 @@ void*	ft_memchr(const void* s, int c, size_t n)
 	return (NULL);
 }
 
+/*
 int	main(void)
 {
 	char	a[20] = "Hola que tal?";
@@ -56,3 +61,4 @@ int	main(void)
 	printf("Original: %s\nCreada:   %s\n", punteroC, punteroCC);
 	return (0);
 }
+*/

@@ -6,29 +6,34 @@
 /*   By: hmartine <hmartine@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/16 22:22:24 by hmartine          #+#    #+#             */
-/*   Updated: 2022/01/22 17:39:39 by hmartine         ###   ########.fr       */
+/*   Updated: 2022/02/06 19:24:25 by hmartine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
 #include<string.h>
 #include<stdio.h>
 #include<unistd.h>
 
 void*	ft_memcpy(void* dst, const void* src, size_t n);
+*/
 
-void*	ft_memcpy(void* dst, const void* src, size_t n)
+#include "libft.h"
+
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	size_t	num;
 
 	num = 0;
 	while (num < n)
 	{
-		((unsigned char*) dst)[num] = ((unsigned char*) src)[num];
+		((unsigned char *)dst)[num] = ((unsigned char *)src)[num];
 		num++;
 	}
 	return (dst);
 }
 
+/*
 int	main(void)
 {
 	char	a[20] = "Hola que tal?";
@@ -41,3 +46,4 @@ int	main(void)
 	printf("-> %s\n", ft_memcpy(b, bb, 10));
 	return (0);
 }
+*/
