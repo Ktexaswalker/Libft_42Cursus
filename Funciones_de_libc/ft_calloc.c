@@ -6,7 +6,7 @@
 /*   By: hmartine <hmartine@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/06 14:25:20 by hmartine          #+#    #+#             */
-/*   Updated: 2022/02/06 19:12:59 by hmartine         ###   ########.fr       */
+/*   Updated: 2022/02/12 19:15:23 by hmartine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,16 +23,20 @@ void*	ft_calloc(size_t count, size_t size);
 void	*ft_calloc(size_t count, size_t size)
 {
 	unsigned char	*ptr;
+	size_t			n;
+	size_t			i;
 
-	ptr = (void *)malloc(count * size);
+	i = 0;
+	ptr = malloc(count * size);
 	if (!ptr)
 		return (NULL);
-	while (size > 0)
+	n = size * count;
+	while (i < n)
 	{
-		ptr[size] = ('\0');
-		size--;
+		ptr[i] = '\0';
+		i++;
 	}
-	return ((void *)ptr);
+	return (ptr);
 }
 
 /*
