@@ -6,7 +6,7 @@
 /*   By: hmartine <hmartine@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/01 19:44:13 by hmartine          #+#    #+#             */
-/*   Updated: 2022/02/12 19:20:59 by hmartine         ###   ########.fr       */
+/*   Updated: 2022/03/06 19:44:27 by hmartine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_strrchr(const char *s, int c)
 {
 	char	*p;
 
-	c = (char) c;
+	c = (unsigned char) c;
 	p = (char *)s;
 	while (*p != '\0')
 		p++;
